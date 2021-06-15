@@ -1,4 +1,5 @@
 #pragma once
+#include"Dependencias.h"
 
 namespace TrabajoF {
 
@@ -12,6 +13,7 @@ namespace TrabajoF {
 	/// <summary>
 	/// Resumen de Formulario
 	/// </summary>
+	
 	public ref class Formulario : public System::Windows::Forms::Form
 	{
 	private:
@@ -36,7 +38,6 @@ namespace TrabajoF {
 			space = BufferedGraphicsManager::Current;
 			buffer = space->Allocate(g, this->ClientRectangle);
 
-
 			bmpMapa = gcnew Bitmap("mapa1.png");//mapa
 
 
@@ -53,6 +54,7 @@ namespace TrabajoF {
 				delete components;
 			}
 		}
+
 	private: System::ComponentModel::IContainer^ components;
 	protected:
 
@@ -82,7 +84,7 @@ namespace TrabajoF {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(725, 575);
+			this->ClientSize = System::Drawing::Size(759, 626);
 			this->Name = L"Formulario";
 			this->Text = L"Formulario";
 			this->ResumeLayout(false);
